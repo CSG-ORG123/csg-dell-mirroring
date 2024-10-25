@@ -22,7 +22,7 @@ jobs:
           cd helloworld.git
       - name: Push to GitHub
         run: |
-          cd bitbucket-mirroring.git
+          cd helloworld.git
           git remote remove origin || true
           git remote add origin https://x-access-token:${{ secrets.GITHUB1 }}@github.com/CSG-ORG123/csg-dell-mirroring.git
           git remote -v  # Print the remote URL to confirm it's correct
